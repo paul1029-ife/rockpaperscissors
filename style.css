@@ -48,31 +48,3 @@ body {
         font-size: smaller;
     }
 }
-
-
-ol {
-    align-items: center;
-    position: relative;
-    list-style: none; 
-    padding: 30px;
-}
-
-ol li {
-    position: relative;
-    padding: 10px;
-    color: red;
-    font-size: 40px;
-    counter-increment: numbers;
-}
-
-ol li::before {
-    content: counter(numbers);
-    padding: 0px 9px;
-    border-radius: 50%;
-    background-color: blue;
-    color: white;
-    font-size: 0.7em;
-    font-weight: bold;
-    left: -32px;
-    position: relative; 
-}
