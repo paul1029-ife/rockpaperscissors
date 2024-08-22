@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.gameblock {
+    background-color: aqua;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    border: 4px solid gray;
+    border-radius: 30px;
+    flex-wrap: wrap;
+}
+
+.gameText {
+    text-align: left;
+    font-family: cursive;
+}
+
+.choiceBtn {
+    background-color: #4CAF50;
+    margin: 10px;
+    width: 80px;
+    height: 36px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    font-family: cursive;
+}
+
+.choiceBtn:hover {
+    background-color: gray;
+    color:#4CAF50;
+}
+
+@media (max-width: 430px) {
+    .gameblock {
+        width: 90%;
+        height: 10%
+    }
+    .gameText {
+        font-size: smaller;
+    }
+}
+
+
+ol {
+    align-items: center;
+    position: relative;
+    list-style: none; 
+    padding: 30px;
+}
+
+ol li {
+    position: relative;
+    padding: 10px;
+    color: red;
+    font-size: 40px;
+    counter-increment: numbers;
+}
+
+ol li::before {
+    content: counter(numbers);
+    padding: 0px 9px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    font-size: 0.7em;
+    font-weight: bold;
+    left: -32px;
+    position: relative; 
+}
